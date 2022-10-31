@@ -10,6 +10,10 @@ import User from './components/User';
 import { authenticate } from './store/session';
 import './index.css';
 import Weather from './components/Weather/weather'
+import dotenv from "dotenv";
+
+dotenv.config({
+    path: "../../.env"})
 
 function App() {
   const [loaded, setLoaded] = useState(false);
